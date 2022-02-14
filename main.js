@@ -15,7 +15,7 @@ function createTemplate(task, index) {
     return `<div class="todo-instance">
                 <input onclick="taskIsChecked(${index})" class="checkbox" type="checkbox" ${task.isChecked ? 'checked' : ''}>
                 <span class="todo-text">${task.taskText}</span>
-                <button onclick="deleteTask(${index})" class="delete-btn">Delete button</button>
+                <button onclick="deleteTask(${index})" class="delete-btn">Delete todo</button>
             </div>`
 }
 
